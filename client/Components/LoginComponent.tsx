@@ -5,9 +5,10 @@ const LoginComponent = () => {
   const [password, setPassword] = useState('');
 
   const handleClick = () => {
-    console.log(username, password);
     setUsername('');
     setPassword('');
+    fetch('/auth')
+      .catch(err => console.log(err));
   };
 
   return (

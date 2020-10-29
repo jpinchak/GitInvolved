@@ -15,8 +15,4 @@ function App() {
   )
 }
 
-export const ItemTypes = {
-  DRAGME: 'dragme'
-}
-
 export default App;

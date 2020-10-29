@@ -2,11 +2,12 @@ import React from 'react';
 import { HiOutlineStar } from 'react-icons/hi';
 import { useDrag } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
+import ItemTypes from '../../client/dragitems';
 
 const Repo = (props: any) => {
 
   const [{ isDragging }, drag] = useDrag({
-    item: { type: 'DRAGME' },
+    item: { type: ItemTypes.DRAGME },
     collect: (monitor) => ({
       isDragging: !!monitor.isDragging()
     })
